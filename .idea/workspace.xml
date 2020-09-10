@@ -11,9 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d37ad51-6079-411c-9103-9857642c3c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Components/MenuRecusive.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/menus/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/StorageImageTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/product/add/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admins/product/add/add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/product/add/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admins/product/add/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +202,8 @@
       <workItem from="1599549613376" duration="22000" />
       <workItem from="1599549895023" duration="529000" />
       <workItem from="1599568722300" duration="3153000" />
+      <workItem from="1599643129396" duration="4374000" />
+      <workItem from="1599704946681" duration="4774000" />
     </task>
     <servers />
   </component>
@@ -219,18 +227,18 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="135" y="54" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/43.27.1323.741@43.27.1323.741" timestamp="1597744216063" />
-    <state x="437" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599114251496">
+    <state x="437" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599708075729">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="437" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/43.27.1323.741@43.27.1323.741" timestamp="1599114251496" />
-    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599549633828">
+    <state x="437" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/43.27.1323.741@43.27.1323.741" timestamp="1599708075729" />
+    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599644755756">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1599549633828" />
-    <state x="400" y="143" width="601" height="561" key="NewPhpClassDialog" timestamp="1598596504356">
+    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1599644755756" />
+    <state x="400" y="143" width="601" height="561" key="NewPhpClassDialog" timestamp="1599707853306">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="400" y="143" width="601" height="561" key="NewPhpClassDialog/43.27.1323.741@43.27.1323.741" timestamp="1598596504356" />
+    <state x="400" y="143" width="601" height="561" key="NewPhpClassDialog/43.27.1323.741@43.27.1323.741" timestamp="1599707853306" />
     <state x="500" y="322" width="399" height="149" key="NewPhpFileDialog" timestamp="1599373366261">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -247,18 +255,18 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="581" y="286" width="367" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/43.27.1323.741@43.27.1323.741" timestamp="1597725320117" />
-    <state x="395" y="135" width="618" height="522" key="find.popup" timestamp="1597722805860">
+    <state x="395" y="135" width="618" height="580" key="find.popup" timestamp="1599645533727">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="395" y="135" width="618" height="522" key="find.popup/43.27.1323.741@43.27.1323.741" timestamp="1597722805860" />
-    <state x="368" y="175" key="run.anything.popup" timestamp="1598182420131">
+    <state x="395" y="135" width="618" height="580" key="find.popup/43.27.1323.741@43.27.1323.741" timestamp="1599645533727" />
+    <state x="368" y="175" key="run.anything.popup" timestamp="1599709055472">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1598182420131" />
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1599540742810">
+    <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1599709055472" />
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1599708731726">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1599540742810" />
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1599708731726" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

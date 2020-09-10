@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/admin1', 'AdminController@loginAdmin');
-Route::post('/admin1', 'AdminController@postLoginAdmin');
+Route::get('/admin', 'AdminController@loginAdmin');
+Route::post('/admin', 'AdminController@postLoginAdmin');
 
 
 Route::get('/home', function () {
@@ -87,7 +87,7 @@ Route::prefix('admin')->group(function () {
     //product
 
 
-    Route::prefix('product1')->group(function () {
+    Route::prefix('product')->group(function () {
         Route::get('/', [
             'as' => 'product.index',
             'uses' => 'AdminProductController@index'
@@ -96,6 +96,11 @@ Route::prefix('admin')->group(function () {
         Route::get('/create', [
             'as' => 'product.create',
             'uses' => 'AdminProductController@create'
+        ]);
+
+        Route::post('/store', [
+            'as' => 'product.store',
+            'uses' => 'AdminProductController@store'
         ]);
 
     });
