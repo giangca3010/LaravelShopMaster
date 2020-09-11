@@ -103,6 +103,13 @@ Route::prefix('admin')->group(function () {
             'uses' => 'AdminProductController@store'
         ]);
 
+        Route::get('/edit/{id}', [
+            'as' => 'product.edit',
+            'uses' => 'AdminProductController@edit'
+        ]);
+
+
+
     });
 
 

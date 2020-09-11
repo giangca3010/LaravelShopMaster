@@ -11,14 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d37ad51-6079-411c-9103-9857642c3c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Traits/StorageImageTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/admins/product/list/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/product/add/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admins/product/add/add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/product/add/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admins/product/add/add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admins/product/add/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admins/product/add/add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -152,7 +151,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel-Shop" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -204,6 +203,9 @@
       <workItem from="1599568722300" duration="3153000" />
       <workItem from="1599643129396" duration="4374000" />
       <workItem from="1599704946681" duration="4774000" />
+      <workItem from="1599709738345" duration="14775000" />
+      <workItem from="1599752682606" duration="1923000" />
+      <workItem from="1599820198144" duration="9070000" />
     </task>
     <servers />
   </component>
@@ -231,18 +233,18 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="437" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/43.27.1323.741@43.27.1323.741" timestamp="1599708075729" />
-    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599644755756">
+    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599710005747">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1599644755756" />
+    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1599710005747" />
     <state x="400" y="143" width="601" height="561" key="NewPhpClassDialog" timestamp="1599707853306">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="400" y="143" width="601" height="561" key="NewPhpClassDialog/43.27.1323.741@43.27.1323.741" timestamp="1599707853306" />
-    <state x="500" y="322" width="399" height="149" key="NewPhpFileDialog" timestamp="1599373366261">
+    <state x="500" y="322" width="399" height="149" key="NewPhpFileDialog" timestamp="1599837759997">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="500" y="322" width="399" height="149" key="NewPhpFileDialog/43.27.1323.741@43.27.1323.741" timestamp="1599373366261" />
+    <state x="500" y="322" width="399" height="149" key="NewPhpFileDialog/43.27.1323.741@43.27.1323.741" timestamp="1599837759997" />
     <state x="433" y="130" width="540" height="524" key="StructurePopup" timestamp="1598520892040">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -263,10 +265,10 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1599709055472" />
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1599708731726">
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1599838580908">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1599708731726" />
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1599838580908" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

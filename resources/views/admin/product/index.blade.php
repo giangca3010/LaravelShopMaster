@@ -5,6 +5,11 @@
     <title>Add Product</title>
 @endsection
 
+@section('css')
+    <link rel="stylesheet" href="{{asset('admins/product/list/list.css')}}">
+@endsection
+
+
 @section('content')
     <div class="content-wrapper">
         @include('partials.content-header', ['name' => 'Product', 'key' => 'List'])
@@ -29,29 +34,30 @@
                             </thead>
                             <tbody>
 
-{{--                            @foreach($categories as $category)--}}
+                            @foreach($products as $productItem)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Iphone</td>
-                                    <td>2.400.000</td>
+                                    <th scope="row">{{$productItem -> id}}</th>
+                                    <td>{{$productItem -> name}}</td>
+                                    <td>{{ number_format($productItem -> price) }}</td> {{--format tien te--}}
                                     <td>
-                                        <img src="" alt="">
+                                        <img class="product_image_150_100" src="{{$productItem -> feature_image_path}}" alt="">
                                     </td>
-                                    <td>Điện thoại</td>
+                                    <td>{{optional($productItem->category)->name}}</td> {{--optional neu khong co category thi tra ve null--}}
+
                                     <td>
-                                        <a href="#"
+                                        <a href="{{route('product.edit', ['id'=>$productItem->id])}}"
                                            class="btn btn-default">Edit</a>
                                         <a href="#"
                                            class="btn btn-danger">Delete</a>
                                     </td>
                                 </tr>
 
-{{--                            @endforeach--}}
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
                     <div class="col-md-12">
-{{--                        {{$categories->links()}}--}}
+                        {{$products->links()}}
                     </div>
                 </div>
             </div>

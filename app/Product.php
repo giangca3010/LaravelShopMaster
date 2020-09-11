@@ -22,4 +22,14 @@ class Product extends Model
             ->withTimestamps();
     }
 
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function productImages()
+    {
+        return $this->hasMany(product_images::class,'product_id'); //mot nhieu
+    }
+
 }
