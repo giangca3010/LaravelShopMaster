@@ -32,4 +32,5 @@ class Product extends Model
         return $this->hasMany(product_images::class,'product_id'); //mot nhieu
     }
 
+    //product  vơi product_image là mối quan hệ 1 - nhiều (hasMany)
 }

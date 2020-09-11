@@ -34,9 +34,9 @@
                                 <label>Ảnh đại diện</label>
                                 <input type="file" class="form-control-file" name="feature_image_path">
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-4 feature_image_container">
                                 <div class="row">
-                                    <img src="{{$product->feature_image_path}}">
+                                    <img class="feature_image" src="{{$product->feature_image_path}}">
                                 </div>
                             </div>
 
@@ -66,7 +66,10 @@
                             <div class="form-group">
                                 <label>Nhập tags cho sản phẩm</label>
                                 <select name="tags[]" class="form-control tags_select2_choose" multiple="multiple">
+                                    @foreach($product->tags as $tagItem)
+                                        <option value="{{$tagItem->id}}" selected>{{$tagItem->name}}</option>
 
+                                    @endforeach
                                 </select>
                             </div>
 
