@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Components\Recusive;
+use App\Http\Requests\ProductAddRequest;
 use App\Product;
 use App\product_images;
 use App\product_tag;
@@ -13,7 +14,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\Compilers\Concerns\CompilesLayouts;
 use Illuminate\Support\Facades\DB;
-
 class AdminProductController extends Controller
 {
     use  StorageImageTrait;
@@ -49,7 +49,7 @@ class AdminProductController extends Controller
         return $htmlOption;
     }
 
-    public function store(Request $request)
+    public function store(ProductAddRequest $request)
     {
         try {
             DB::beginTransaction(); // bắt đầu chạy transaction

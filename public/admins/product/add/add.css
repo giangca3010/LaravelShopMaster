@@ -11,5 +11,17 @@
 .container_image_detail, .feature_image_container{
     margin-top: 20px;
 }
+.alert-danger {
+    color: #fff;
+    /* background: #dc3545; */
+    /* border-color: #d32535; */
+    margin-top: 10px;
+    padding: 5px 3px;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    /* border-color: #f5c6cb; */
+}
 
 
