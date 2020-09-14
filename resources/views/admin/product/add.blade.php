@@ -5,9 +5,8 @@
 @endsection
 
 @section('css')
-    <link href="{{asset('vendors/select2/select2.min.css')}}" rel="stylesheet"/>
-    <link href="{{asset('admins/product/add/add.css')}}" rel="stylesheet"/>
-
+    <link href="{{asset('vendors/select2/select2.min.css')}}" rel="stylesheet" >
+    <link href="{{asset('admins/product/add/add.css')}}" rel="stylesheet" >
 @endsection
 
 @section('content')
@@ -77,8 +76,5 @@
     <script src="{{asset('vendors/select2/select2.min.js')}}"></script>
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <script src="{{asset('admins/product/add/add.js')}}"></script>
-    <script>
-
-    </script>
 @endsection
 
