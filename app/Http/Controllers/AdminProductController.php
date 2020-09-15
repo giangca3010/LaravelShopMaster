@@ -47,6 +47,7 @@ class AdminProductController extends Controller
         $recusive = new Recusive($data);
         $htmlOption = $recusive->categoryRecusive($parentId);
         return $htmlOption;
+//        dd($data);
     }
 
     public function store(ProductAddRequest $request)
@@ -66,7 +67,6 @@ class AdminProductController extends Controller
                 $dataProductCreate['feature_image_path'] = $dataUploadFeatureImage['file_path'];
             }
             $product = $this->product->create($dataProductCreate);
-
             //insert data product_images
             if ($request->hasFile('image_path')) {
                 foreach ($request->image_path as $fileItem) {
@@ -92,6 +92,7 @@ class AdminProductController extends Controller
             DB::rollBack(); //có bug sẽ không insert data
             Log::error('Message: ' . $exception->getMessage() . 'Line: ' . $exception->getLine());
         }
+        return redirect()->route('product.index');
     }
 
     public function edit($id)
@@ -146,6 +147,7 @@ class AdminProductController extends Controller
             DB::rollBack(); //có bug sẽ không insert data
             Log::error('Message: ' . $exception->getMessage() . 'Line: ' . $exception->getLine());
         }
+        return redirect()->route('product.index');
     }
 
     public function delete($id)
@@ -164,6 +166,5 @@ class AdminProductController extends Controller
                 'message' => 'fail',
             ], 500);
         }
-
     }
 }

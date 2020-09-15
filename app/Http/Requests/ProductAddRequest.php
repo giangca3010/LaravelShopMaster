@@ -25,10 +25,10 @@ class ProductAddRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:products|max:255|min:10',
+            'name' => 'required|unique:products|max:255|min:6',
             'price' => 'required',
             'category_id' => 'required',
-            'content' => 'required'
+            'contents' => 'required'
 
         ];
     }
@@ -41,7 +41,7 @@ class ProductAddRequest extends FormRequest
             'name.min' => 'Tên quá ngắn',
             'name.unique' => 'Tên không được phép trùng',
             'category_id.required' => 'Danh mục không được để trống',
-            'content.required' => 'Nội không được để trống',
+            'contents.required' => 'Nội không được để trống',
             'price.required' => 'Vui lòng nhập giá sản phẩm',
         ];
     }

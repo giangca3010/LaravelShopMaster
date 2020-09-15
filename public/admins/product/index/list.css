@@ -2,4 +2,5 @@
     width: 150px;
     height: 100px;
     object-fit: cover;
+    padding-top: 10px;
 }
