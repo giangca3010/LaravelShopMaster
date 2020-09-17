@@ -15,11 +15,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="{{route('settings.store')}}" method="post">
+                        <form action="{{route('settings.update', ['id'=>$setting->id])}}" method="post">
                             @csrf
                             <div class="form-group">
                                 <label>Config key</label>
-                                <input type="text" class="form-control @error('config_key') is-invalid @enderror" name="config_key" placeholder="Nhập config key">
+                                <input value="{{$setting->config_key}}" type="text" class="form-control @error('config_key') is-invalid @enderror" name="config_key" placeholder="Nhập config key">
                                 @error('config_key')
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
@@ -28,7 +28,7 @@
                             @if(request()->type ==='Text')
                                 <div class="form-group">
                                     <label>Config value</label>
-                                    <input type="text" class="form-control @error('config_value') is-invalid @enderror" name="config_value"
+                                    <input value="{{$setting->config_value}}" type="text" class="form-control @error('config_value') is-invalid @enderror" name="config_value"
                                            placeholder="Nhập config value">
                                     @error('config_value')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -38,7 +38,7 @@
                                 <div class="form-group">
                                     <label>Config value</label>
                                     <textarea rows="5" class="form-control @error('config_value') is-invalid @enderror" name="config_value"
-                                              placeholder="Nhập config value"></textarea>
+                                              placeholder="Nhập config value">value="{{$setting->config_value}}"</textarea>
                                     @error('config_value')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror

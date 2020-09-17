@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="{{asset('admins/setting/index.css')}}">
 @endsection
 
+@section('js')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="{{ asset('admins/main.js') }}"></script>
+@endsection
+
 @section('content')
     <div class="content-wrapper">
         @include('partials.content-header', ['name' => 'Settings', 'key' => 'List'])
-
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -48,7 +52,8 @@
                                         <a href="{{ route('settings.edit', ['id'=>$settingItem->id]) . '?type=' . $settingItem->type }}"
                                            class="btn btn-default">Edit</a>
                                         <a href=""
-                                           class="btn btn-danger">Delete</a>
+                                           data-url="{{ route('settings.delete', ['id'=>$settingItem->id]) }}"
+                                           class="btn btn-danger action_delete">Delete</a>
                                     </td>
                                 </tr>
 

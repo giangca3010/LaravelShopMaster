@@ -9,6 +9,7 @@ use App\Product;
 use App\product_images;
 use App\product_tag;
 use App\Tag;
+use App\Traits\DeleteModelTrait;
 use App\Traits\StorageImageTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -16,8 +17,8 @@ use Illuminate\View\Compilers\Concerns\CompilesLayouts;
 use Illuminate\Support\Facades\DB;
 class AdminProductController extends Controller
 {
+    use DeleteModelTrait;
     use  StorageImageTrait;
-
     private $category;
 
     public function __construct(Category $category, Product $product, product_images $product_images, product_tag $product_tag, Tag $tag)
@@ -152,19 +153,7 @@ class AdminProductController extends Controller
 
     public function delete($id)
     {
-        try {
-            $this->product->find($id)->delete();
-            return response()->json([
-               'code' => 200,
-                'message' => 'success',
-            ], 200);
-        }catch (\Exception $exception) {
-            DB::rollBack(); //có bug sẽ không insert data
-            Log::error('Message: ' . $exception->getMessage() . 'Line: ' . $exception->getLine());
-            return response()->json([
-                'code' => 500,
-                'message' => 'fail',
-            ], 500);
-        }
+        return $this->deleteModelTrait($id, $this->product);
+
     }
 }
