@@ -35,7 +35,7 @@
                             <div class="form-group">
                                 <label>Giá sản phẩm</label>
                                 <input
-                                    type="text"
+                                    type="number"
                                     class="@error('price') is-invalid @enderror form-control"
                                     name="price"
                                     value="{{ old('price') }}"

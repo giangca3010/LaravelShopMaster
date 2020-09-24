@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class CreateRoleSeeder extends Seeder
 {
@@ -13,10 +12,22 @@ class CreateRoleSeeder extends Seeder
     public function run()
     {
         DB::table('roles')->insert([
-           ['name' => 'admin', 'display_name' => 'Quản trị hệ thống'],
-           ['name' => 'guest', 'display_name' => 'Khách hàng'],
-           ['name' => 'developer', 'display_name' => 'Phát triển hệ thống'],
-           ['name' => 'content', 'display_name' => 'Chỉnh sửa nội dung'],
+            [
+                'name' => 'Admin',
+                'display_name' => 'Quản trị viên'
+            ],
+            [
+                'name' => 'Guest',
+                'display_name' => 'Khách hàng'
+            ],
+            [
+                'name' => 'Developer',
+                'display_name' => 'Nhà phát triển'
+            ],
+            [
+                'name' => 'Content',
+                'display_name' => 'Chỉnh sửa nội dung'
+            ],
         ]);
     }
 }

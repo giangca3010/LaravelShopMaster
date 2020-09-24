@@ -1111,7 +1111,7 @@ function isHitsEqual(hit0, hit1) {
 }
 
 /*
-Monitors when the user clicks on a specific date/time of a component.
+Monitors when the user clicks on a specific date/time of a componentShow.
 A pointerdown+pointerup on the same "hit" constitutes a click.
 */
 var DateClicking = /** @class */ (function (_super) {
@@ -1151,7 +1151,7 @@ var DateClicking = /** @class */ (function (_super) {
 }(Interaction));
 
 /*
-Tracks when the user selects a portion of time of a component,
+Tracks when the user selects a portion of time of a componentShow,
 constituted by a drag over date cells, with a possible delay at the beginning of the drag.
 */
 var DateSelecting = /** @class */ (function (_super) {
@@ -1164,7 +1164,7 @@ var DateSelecting = /** @class */ (function (_super) {
             var options = component.context.options;
             var canSelect = options.selectable &&
                 component.isValidDateDownEl(ev.origEvent.target);
-            // don't bother to watch expensive moves if component won't do selection
+            // don't bother to watch expensive moves if componentShow won't do selection
             dragging.setIgnoreMove(!canSelect);
             // if touch, require user to hold down
             dragging.delay = ev.isTouch ? getComponentTouchDelay(component) : null;
@@ -1455,7 +1455,7 @@ var EventDragging = /** @class */ (function (_super) {
                                 eventInstanceId: eventInstance.instanceId
                             });
                         }
-                        var dropArg = __assign({}, receivingCalendar.buildDatePointApi(finalHit.dateSpan), { draggedEl: ev.subjectEl, jsEvent: ev.origEvent, view: finalHit.component // should this be finalHit.component.view? See #4644
+                        var dropArg = __assign({}, receivingCalendar.buildDatePointApi(finalHit.dateSpan), { draggedEl: ev.subjectEl, jsEvent: ev.origEvent, view: finalHit.component // should this be finalHit.componentShow.view? See #4644
                          });
                         receivingCalendar.publiclyTrigger('drop', [dropArg]);
                         receivingCalendar.publiclyTrigger('eventReceive', [
@@ -1463,7 +1463,7 @@ var EventDragging = /** @class */ (function (_super) {
                                 draggedEl: ev.subjectEl,
                                 event: new EventApi(// the data AFTER the mutation
                                 receivingCalendar, mutatedRelevantEvents.defs[eventDef.defId], mutatedRelevantEvents.instances[eventInstance.instanceId]),
-                                view: finalHit.component // should this be finalHit.component.view? See #4644
+                                view: finalHit.component // should this be finalHit.componentShow.view? See #4644
                             }
                         ]);
                     }
@@ -1902,7 +1902,7 @@ var ExternalElementDragging = /** @class */ (function () {
             _this.droppableEvent = null;
         };
         var hitDragging = this.hitDragging = new HitDragging(dragging, interactionSettingsStore);
-        hitDragging.requireInitial = false; // will start outside of a component
+        hitDragging.requireInitial = false; // will start outside of a componentShow
         hitDragging.emitter.on('dragstart', this.handleDragStart);
         hitDragging.emitter.on('hitupdate', this.handleHitUpdate);
         hitDragging.emitter.on('dragend', this.handleDragEnd);

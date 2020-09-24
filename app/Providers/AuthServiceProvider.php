@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Services\PermissionGateAndPolicyAccess;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -25,6 +26,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Define permission
+        $permissionGateAndPolicy = new PermissionGateAndPolicyAccess();
+        $permissionGateAndPolicy->setGateAndPolicyAccess();
     }
 }

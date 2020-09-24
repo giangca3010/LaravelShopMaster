@@ -2682,7 +2682,7 @@ function utf8ToBytes (string, units) {
   for (var i = 0; i < length; ++i) {
     codePoint = string.charCodeAt(i)
 
-    // is surrogate component
+    // is surrogate componentShow
     if (codePoint > 0xD7FF && codePoint < 0xE000) {
       // last char was a lead
       if (!leadSurrogate) {
@@ -22883,7 +22883,7 @@ var VectorMixin = {
     var numSegs = Math.ceil(Math.abs(deltaAng) / HALF_PI);
     var segAng = deltaAng / numSegs;
     var handleLen = segAng / HALF_PI * KAPPA * radius;
-    var curAng = startAngle; // component distances between anchor point and control point
+    var curAng = startAngle; // componentShow distances between anchor point and control point
 
     var deltaCx = -Math.sin(curAng) * handleLen;
     var deltaCy = Math.cos(curAng) * handleLen; // anchor point
@@ -44914,7 +44914,7 @@ function decompose(glyphs, i, font) {
   }
 
   // Replace the current glyph with decomposed L, V, and T glyphs,
-  // and apply the proper OpenType features to each component.
+  // and apply the proper OpenType features to each componentShow.
   var ljmo = getGlyph(font, l, glyph.features);
   ljmo.features.ljmo = true;
 
@@ -44976,7 +44976,7 @@ function compose(glyphs, i, font) {
     var s = lv + (t - T_BASE);
 
     // Replace with a composed glyph if supported by the font,
-    // otherwise apply the proper OpenType features to each component.
+    // otherwise apply the proper OpenType features to each componentShow.
     if (font.hasGlyphForCodePoint(s)) {
       var del = prevType === V ? 3 : 2;
       glyphs.splice(i - del + 1, del, getGlyph(font, s, glyph.features));
@@ -44984,7 +44984,7 @@ function compose(glyphs, i, font) {
     }
   }
 
-  // Didn't compose (either a non-combining component or unsupported by font).
+  // Didn't compose (either a non-combining componentShow or unsupported by font).
   if (ljmo) {
     ljmo.features.ljmo = true;
   }
@@ -46680,23 +46680,23 @@ var GSUBProcessor = function (_OTProcessor) {
             //   the ligature to keep its old ligature id.  This will allow it to attach to
             //   a base ligature in GPOS.  Eg. if the sequence is: LAM,LAM,SHADDA,FATHA,HEH,
             //   and LAM,LAM,HEH for a ligature, they will leave SHADDA and FATHA with a
-            //   ligature id and component value of 2.  Then if SHADDA,FATHA form a ligature
-            //   later, we don't want them to lose their ligature id/component, otherwise
+            //   ligature id and componentShow value of 2.  Then if SHADDA,FATHA form a ligature
+            //   later, we don't want them to lose their ligature id/componentShow, otherwise
             //   GPOS will fail to correctly position the mark ligature on top of the
             //   LAM,LAM,HEH ligature. See https://bugzilla.gnome.org/show_bug.cgi?id=676343
             //
             // - If a ligature is formed of components that some of which are also ligatures
             //   themselves, and those ligature components had marks attached to *their*
-            //   components, we have to attach the marks to the new ligature component
+            //   components, we have to attach the marks to the new ligature componentShow
             //   positions!  Now *that*'s tricky!  And these marks may be following the
-            //   last component of the whole sequence, so we should loop forward looking
+            //   last componentShow of the whole sequence, so we should loop forward looking
             //   for them and update them.
             //
             //   Eg. the sequence is LAM,LAM,SHADDA,FATHA,HEH, and the font first forms a
             //   'calt' ligature of LAM,HEH, leaving the SHADDA and FATHA with a ligature
-            //   id and component == 1.  Now, during 'liga', the LAM and the LAM-HEH ligature
+            //   id and componentShow == 1.  Now, during 'liga', the LAM and the LAM-HEH ligature
             //   form a LAM-LAM-HEH ligature.  We need to reassign the SHADDA and FATHA to
-            //   the new ligature with a component value of 2.
+            //   the new ligature with a componentShow value of 2.
             //
             //   This in fact happened to a font...  See https://bugzilla.gnome.org/show_bug.cgi?id=437633
             var isMarkLigature = _curGlyph.isMark;
@@ -47055,7 +47055,7 @@ var GPOSProcessor = function (_OTProcessor) {
               // Marks belonging to the same base
               good = true;
             } else if (_cur.ligatureComponent === prev.ligatureComponent) {
-              // Marks belonging to the same ligature component
+              // Marks belonging to the same ligature componentShow
               good = true;
             }
           } else {
@@ -48188,7 +48188,7 @@ var Point = function () {
   return Point;
 }();
 
-// Represents a component in a composite glyph
+// Represents a componentShow in a composite glyph
 
 var Component = function Component(glyphID, dx, dy) {
   _classCallCheck(this, Component);

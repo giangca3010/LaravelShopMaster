@@ -16,10 +16,13 @@
             background-color: #17a2b8;
             height: 100vh;
         }
+        strong{
+            color: #721c24;
+        }
         #login .container #login-row #login-column #login-box {
-            margin-top: 60px;
+            margin-top: 10px;
             max-width: 600px;
-            height: 320px;
+            height: 370px;
             border: 1px solid #9C9C9C;
             background-color: #EAEAEA;
         }
@@ -37,7 +40,9 @@
     <div id="login">
         <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
+
             <div id="login-row" class="row justify-content-center align-items-center">
+
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="" method="post">
@@ -46,6 +51,13 @@
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
                                 <input type="text" name="email" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                @if(session('message'))
+                                    <h6 id="login-column" class="text-center" role="alert">
+                                        <strong>{{session('message')}}</strong>
+                                    </h6>
+                                @endif
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>

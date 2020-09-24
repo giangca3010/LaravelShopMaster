@@ -34,10 +34,10 @@ class SliderAddRequest extends FormRequest
     {
         return [
             'name.required' => 'Không được để trống',
-            'name.unique' => 'Tên quá dài',
-            'name.max' => 'Tên bị trùng',
-            'description' => 'Không được để trống',
-            'image_path' => 'Không được để trống',
+            'name.unique' => 'Tên bị trùng',
+            'name.max' => 'Tên quá dài',
+            'description.required' => 'Không được để trống',
+            'image_path.required' => 'Không được để trống',
         ];
     }
 }

@@ -1083,7 +1083,7 @@ var DateTimePicker = function ($, moment) {
                 throw new TypeError('defaultDate() Could not parse date parameter: ' + _defaultDate);
             }
             if (!this._isValid(parsedDate)) {
-                throw new TypeError('defaultDate() date passed is invalid according to component setup validations');
+                throw new TypeError('defaultDate() date passed is invalid according to componentShow setup validations');
             }
 
             this._options.defaultDate = parsedDate;
@@ -1885,7 +1885,7 @@ var TempusDominusBootstrap4 = function ($) {
             }
 
             if (parent.length === 0) {
-                throw new Error('datetimepicker component should be placed within a relative positioned container');
+                throw new Error('datetimepicker componentShow should be placed within a relative positioned container');
             }
 
             self.widget.css({
@@ -2179,7 +2179,7 @@ var TempusDominusBootstrap4 = function ($) {
         TempusDominusBootstrap4.prototype._fillTime = function _fillTime() {
             var toggle = void 0,
                 newDate = void 0;
-            var timeComponents = this.widget.find('.timepicker span[data-time-component]');
+            var timeComponents = this.widget.find('.timepicker span[data-time-componentShow]');
 
             if (!this.use24Hours) {
                 toggle = this.widget.find('.timepicker [data-action=togglePeriod]');

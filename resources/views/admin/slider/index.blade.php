@@ -5,7 +5,7 @@
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="{{asset('admins/product/index/list.css')}}">
+    <link rel="stylesheet" href="{{asset('admins/product/index/list.css')}}">
 @endsection
 
 @section('js')
@@ -23,7 +23,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="{{route('slider.create')}}" class="btn btn-success float-right m-2">Add</a>
+                        @can('slider-add')
+                            <a href="{{route('slider.create')}}" class="btn btn-success float-right m-2">Add</a>
+                        @endcan
                     </div>
                     <div class="col-md-12">
                         <table class="table">
@@ -44,14 +46,18 @@
                                     <td>{{$sliderItem->name}}</td>
                                     <td>{{$sliderItem->Description}}</td>
                                     <td>
-                                        <img  alt="">
+                                        <img alt="">
                                         <img class="product_image_150_100" src="{{$sliderItem->image_path}}">
                                     </td>
                                     <td>
-                                        <a href="{{ route('slider.edit', ['id'=>$sliderItem->id]) }}"
-                                           class="btn btn-default">Edit</a>
-                                        <a data-url="{{ route('slider.delete', ['id'=>$sliderItem->id]) }}"
-                                           class="btn btn-danger action_delete">Delete</a>
+                                        @can('slider-edit')
+                                            <a href="{{ route('slider.edit', ['id'=>$sliderItem->id]) }}"
+                                               class="btn btn-default">Edit</a>
+                                        @endcan
+                                        @can('slider-delete')
+                                            <a data-url="{{ route('slider.delete', ['id'=>$sliderItem->id]) }}"
+                                               class="btn btn-danger action_delete">Delete</a>
+                                        @endcan
                                     </td>
                                 </tr>
 

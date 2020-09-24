@@ -47,4 +47,20 @@ class User extends Authenticatable
             'role_id');
     }
 
+    public function checkPermissionAccess($permissionCheck)
+    {
+        //user login co quyen add, sua danh muc vaf xem menu
+        //b1 lay tat ca cac quyen user dang login vao he thong
+        //b2 so sanh gia tri dua vao router hien tai xem co ton tai cac quyen minh lay duoc hay khong
+
+        $roles = auth()->user()->roles;
+        foreach ($roles as $role){
+            $permissions = $role->permission;
+            if ($permissions->contains('key_code', $permissionCheck)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

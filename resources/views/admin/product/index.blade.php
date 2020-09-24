@@ -1,4 +1,3 @@
-
 @extends('layouts.admin')
 
 @section('title')
@@ -22,7 +21,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="{{route('product.create')}}" class="btn btn-success float-right m-2">Add</a>
+                        @can('product-add')
+                            <a href="{{route('product.create')}}" class="btn btn-success float-right m-2">Add</a>
+                        @endcan
                     </div>
                     <div class="col-md-12">
                         <table class="table">
@@ -44,16 +45,21 @@
                                     <td>{{$productItem -> name}}</td>
                                     <td>{{ number_format($productItem -> price) }}</td> {{--format tien te--}}
                                     <td>
-                                        <img class="product_image_150_100" src="{{$productItem -> feature_image_path}}" alt="">
+                                        <img class="product_image_150_100" src="{{$productItem -> feature_image_path}}"
+                                             alt="">
                                     </td>
                                     <td>{{optional($productItem->category)->name}}</td> {{--optional neu khong co category thi tra ve null--}}
 
                                     <td>
-                                        <a href="{{route('product.edit', ['id'=>$productItem->id])}}"
-                                           class="btn btn-default">Edit</a>
-                                        <a href=""
-                                           data-url="{{ route('product.delete', ['id'=>$productItem->id]) }}"
-                                           class="btn btn-danger action_delete">Delete</a>
+                                        @can('product-edit')
+                                            <a href="{{route('product.edit', ['id'=>$productItem->id])}}"
+                                               class="btn btn-default">Edit</a>
+                                        @endcan
+                                        @can('product-delete')
+                                            <a href=""
+                                               data-url="{{ route('product.delete', ['id'=>$productItem->id]) }}"
+                                               class="btn btn-danger action_delete">Delete</a>
+                                        @endcan
                                     </td>
                                 </tr>
 

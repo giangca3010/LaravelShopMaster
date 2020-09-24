@@ -441,7 +441,7 @@ var TimeGridFillRenderer = /** @class */ (function (_super) {
     return TimeGridFillRenderer;
 }(FillRenderer));
 
-/* A component that renders one or more columns of vertical time slots
+/* A componentShow that renders one or more columns of vertical time slots
 ----------------------------------------------------------------------------------------------------------------------*/
 // potential nice values for the slot-duration and interval-duration
 // from largest to smallest

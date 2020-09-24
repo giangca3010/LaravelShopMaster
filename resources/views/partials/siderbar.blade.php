@@ -4,7 +4,13 @@
         <img src="{{asset('adminlte/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo"
              class="brand-image img-circle elevation-3"
              style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light">
+            @if(session('account'))
+                    {{session('account')}}
+            @else
+                ADMIN
+            @endif
+        </span>
     </a>
 
     <!-- Sidebar -->
@@ -16,8 +22,9 @@
                      alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="/adminLogout" class="d-block">Logout</a>
             </div>
+
         </div>
 
         <!-- Sidebar Menu -->
@@ -68,6 +75,20 @@
                     <a href="{{route('users.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>Danh sách nhân viên</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{route('roles.index')}}" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>Danh vai trò (roles)</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{route('permissions.create')}}" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>Tạo dữ liệu bảng permission</p>
                     </a>
                 </li>
 

@@ -1,6 +1,6 @@
 // Variables
 //
-// Variables should follow the `$component-state-property-size` formula for
+// Variables should follow the `$componentShow-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 
@@ -299,7 +299,7 @@ $hr-margin-y:                 $spacer !default;
 
 // Tables
 //
-// Customizes the `.table` component with basic values, each used across all table variations.
+// Customizes the `.table` componentShow with basic values, each used across all table variations.
 
 $table-cell-padding:          .75rem !default;
 $table-cell-padding-sm:       .3rem !default;

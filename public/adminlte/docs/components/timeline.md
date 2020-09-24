@@ -9,7 +9,7 @@ You can use it for descriptions of events that occurred in a particular time sec
 ##### Default
 
 ```html
-<!-- Main node for this component -->
+<!-- Main node for this componentShow -->
 <div class="timeline">
   <!-- Timeline time label -->
   <div class="time-label">

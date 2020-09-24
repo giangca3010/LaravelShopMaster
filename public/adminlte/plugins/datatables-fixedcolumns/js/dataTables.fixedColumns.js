@@ -199,7 +199,7 @@ var FixedColumns = function ( dt, init ) {
 
 			/**
 			 * DataTables scrolling element. This element is the DataTables
-			 * component in the display grid (making up the main table - i.e.
+			 * componentShow in the display grid (making up the main table - i.e.
 			 * not the fixed columns).
 			 *  @type     node
 			 *  @default  null
@@ -1150,7 +1150,7 @@ $.extend( FixedColumns.prototype , {
 			/* To ensure that we copy cell classes exactly, regardless of colspan, multiple rows
 			 * etc, we make a copy of the header from the DataTable again, but don't insert the
 			 * cloned cells, just copy the classes across. To get the matching layout for the
-			 * fixed component, we use the DataTables _fnDetectHeader method, allowing 1:1 mapping
+			 * fixed componentShow, we use the DataTables _fnDetectHeader method, allowing 1:1 mapping
 			 */
 			aoCloneLayout = this._fnCopyLayout( dt.aoHeader, aiColumns, false );
 			aoFixedHeader=[];

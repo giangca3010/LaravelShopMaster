@@ -61,6 +61,7 @@ class AdminProductController extends Controller
                 'content' => $request->contents,
                 'user_id' => auth()->id(),
                 'category_id' => $request->category_id,
+                'views_count' => $request->category_id,
             ];
             $dataUploadFeatureImage = $this->storageTraitUpload($request, 'feature_image_path', 'product');
             if (!empty($dataUploadFeatureImage)) {
@@ -68,6 +69,7 @@ class AdminProductController extends Controller
                 $dataProductCreate['feature_image_path'] = $dataUploadFeatureImage['file_path'];
             }
             $product = $this->product->create($dataProductCreate);
+
             //insert data product_images
             if ($request->hasFile('image_path')) {
                 foreach ($request->image_path as $fileItem) {

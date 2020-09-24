@@ -1395,7 +1395,7 @@ Docs & License: https://fullcalendar.io/
             this.scroller.destroy();
         };
         // Builds the HTML skeleton for the view.
-        // The day-grid component will render inside of a container defined by this HTML.
+        // The day-grid componentShow will render inside of a container defined by this HTML.
         AbstractDayGridView.prototype.renderSkeletonHtml = function () {
             var _a = this.context, theme = _a.theme, options = _a.options;
             return '' +
@@ -1490,7 +1490,7 @@ Docs & License: https://fullcalendar.io/
             return viewHeight -
                 core.subtractInnerElHeight(this.el, this.scroller.el); // everything that's NOT the scroller
         };
-        // Sets the height of just the DayGrid component in this view
+        // Sets the height of just the DayGrid componentShow in this view
         AbstractDayGridView.prototype.setGridHeight = function (height, isAuto) {
             if (this.context.options.monthMode) {
                 // if auto, make the height of each row the height that it would be if there were 6 weeks

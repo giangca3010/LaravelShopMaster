@@ -2773,7 +2773,7 @@ function isInteractionPropsValid(state, calendar, dateSpanMeta, filterConfig) {
             }
         }
         // allow (a function)
-        var calendarEventStore = calendar.state.eventStore; // need global-to-calendar, not local to component (splittable)state
+        var calendarEventStore = calendar.state.eventStore; // need global-to-calendar, not local to componentShow (splittable)state
         for (var _i = 0, _a = subjectConfig.allows; _i < _a.length; _i++) {
             var subjectAllow = _a[_i];
             var subjectDateSpan = __assign({}, dateSpanMeta, { range: subjectInstance.range, allDay: subjectDef.allDay });
@@ -3962,7 +3962,7 @@ var Component = /** @class */ (function () {
     };
     Component.prototype.afterUpdate = function () {
     };
-    // after destroy is called, this component won't ever be used again
+    // after destroy is called, this componentShow won't ever be used again
     Component.prototype.destroy = function () {
     };
     return Component;
@@ -4049,8 +4049,8 @@ var DateComponent = /** @class */ (function (_super) {
             !this.props.eventResize && // HACK
             !elementClosest(el, '.fc-mirror') &&
             (this.isPopover() || !this.isInPopover(el));
-        // ^above line ensures we don't detect a seg interaction within a nested component.
-        // it's a HACK because it only supports a popover as the nested component.
+        // ^above line ensures we don't detect a seg interaction within a nested componentShow.
+        // it's a HACK because it only supports a popover as the nested componentShow.
     };
     DateComponent.prototype.isValidDateDownEl = function (el) {
         var segEl = elementClosest(el, this.fgSegSelector);
@@ -6475,7 +6475,7 @@ var EventClicking = /** @class */ (function (_super) {
 
 /*
 Triggers events and adds/removes core classNames when the user's pointer
-enters/leaves event-elements of a component.
+enters/leaves event-elements of a componentShow.
 */
 var EventHovering = /** @class */ (function (_super) {
     __extends(EventHovering, _super);
@@ -6503,7 +6503,7 @@ var EventHovering = /** @class */ (function (_super) {
         };
         var component = settings.component;
         _this.removeHoverListeners = listenToHoverBySelector(component.el, component.fgSegSelector + ',' + component.bgSegSelector, _this.handleSegEnter, _this.handleSegLeave);
-        // how to make sure component already has context?
+        // how to make sure componentShow already has context?
         component.context.calendar.on('eventElRemove', _this.handleEventElRemove);
         return _this;
     }
@@ -8526,7 +8526,7 @@ var Slicer = /** @class */ (function () {
         return segs;
     };
     /*
-    "complete" seg means it has component and eventRange
+    "complete" seg means it has componentShow and eventRange
     */
     Slicer.prototype.sliceEventRanges = function (eventRanges, component, // TODO: kill
     extraArgs) {
@@ -8538,7 +8538,7 @@ var Slicer = /** @class */ (function () {
         return segs;
     };
     /*
-    "complete" seg means it has component and eventRange
+    "complete" seg means it has componentShow and eventRange
     */
     Slicer.prototype.sliceEventRange = function (eventRange, component, // TODO: kill
     extraArgs) {
