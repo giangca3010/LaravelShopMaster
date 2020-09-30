@@ -109,7 +109,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="login.html"><i class="fa fa-lock"></i>
+                                <a href="#"><i class="fa fa-lock"></i>
                                     Login
                                 </a>
                                 <a class="login-admin" href="/adminLogin"><i class="fa fa-lock"></i>

@@ -29,6 +29,7 @@ class AdminController extends Controller
         }else{
             return redirect()->back()->with('message', 'Tài khoản hoặc mật khẩu không đúng');
         }
+//        dd($remember);
     }
 
     public function logoutAdmin()
