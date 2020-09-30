@@ -11,72 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d37ad51-6079-411c-9103-9857642c3c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/SliderSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SliderSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/blog-single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/checkout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/contact-us.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/blog-one.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/blog-three.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/blog-two.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/man-four.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/man-one.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/man-three.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/blog/man-two.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/gallery1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/gallery2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/gallery3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/gallery4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/girl1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/girl2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/girl3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/iframe1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/iframe2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/iframe3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/iframe4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/product1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/product2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/product3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/product4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/product5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/product6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/recommend1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/recommend2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/home/recommend3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/product-details/new.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/product-details/similar1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/product-details/similar2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/product-details/similar3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/advertisement.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/product10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/product11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/product12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/product7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/product8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/images/shop/product9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/product-details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/sendemail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/shop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/componentShow/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/componentShow/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/component/categry_tabs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/categry_tabs.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/component/recomment_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/recomment_product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layoutsShow/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutsShow/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/productShow/category/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/productShow/category/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,6 +257,7 @@
       <workItem from="1601273098842" duration="17521000" />
       <workItem from="1601355425086" duration="614000" />
       <workItem from="1601433461041" duration="4000000" />
+      <workItem from="1601448646127" duration="1825000" />
     </task>
     <servers />
   </component>
