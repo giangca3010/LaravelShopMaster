@@ -9,7 +9,7 @@
 @endsection
 
 @section('js')
-    <link href="{{ asset('home/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('home/home.js') }}" rel="stylesheet">
 @endsection
 
 
@@ -30,17 +30,13 @@
                                             <img src="{{config('app.base_url') . $product->feature_image_path}}" alt=""/>
                                             <h2>{{ number_format($product -> price) }}</h2>
                                             <p>{{ $product -> name }}</p>
-                                            <a href="#" class="btn btn-default add-to-cart"><i
-                                                    class="fa fa-shopping-cart"></i>Add to cart</a>
+                                            <a onclick="AddCart({{$product->id}})" href="javascript:"
+                                               class="btn btn-default add-to-cart">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add to cart
+                                            </a>
                                         </div>
-                                        <div class="product-overlay">
-                                            <div class="overlay-content">
-                                                <h2>{{ number_format($product -> price) }}</h2>
-                                                <p>{{ $product -> name }}</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i
-                                                        class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <div class="choose">
                                         <ul class="nav nav-pills nav-justified">

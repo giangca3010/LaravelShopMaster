@@ -1,3 +1,4 @@
+
 <div class="features_items">
     <h2 class="title text-center">Features Items</h2>
     @foreach($products as $product)
@@ -8,17 +9,14 @@
                         <img src="{{config('app.base_url') . $product->feature_image_path}}" alt=""/>
                         <h2>{{ number_format($product->price) }}VND</h2>
                         <p>{{ $product->name }}</p>
-                        <a href="#" class="btn btn-default add-to-cart"><i
-                                class="fa fa-shopping-cart"></i>Add to cart</a>
+                        <a onclick="AddCart({{$product->id}})"
+                           href="javascript:"
+                           class="btn btn-default add-to-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            Add to cart
+                        </a>
                     </div>
-                    <div class="product-overlay">
-                        <div class="overlay-content">
-                            <h2>{{ number_format($product->price) }} VND</h2>
-                            <p>{{ $product->name }}</p>
-                            <a href="#" class="btn btn-default add-to-cart"><i
-                                    class="fa fa-shopping-cart"></i>Add to cart</a>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="choose">
                     <ul class="nav nav-pills nav-justified">

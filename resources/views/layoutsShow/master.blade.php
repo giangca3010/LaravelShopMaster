@@ -27,6 +27,13 @@
 <script src="{{asset('Eshopper/js/price-range.js')}}"></script>
 <script src="{{asset('Eshopper/js/jquery.prettyPhoto.js')}}"></script>
 <script src="{{asset('Eshopper/js/main.js')}}"></script>
+<script>
+    function AddCart(id) {
+        console.log(id);
+    }
+</script>
+
 @yield('js')
+
 </body>
 </html>

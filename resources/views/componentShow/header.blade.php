@@ -1,23 +1,31 @@
 <header id="header"><!--header-->
     <div class="header_top"><!--header_top-->
-{{--        <div class="fa">Login admin</div>--}}
+        {{--        <div class="fa">Login admin</div>--}}
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
-                            <li><a href="#"><i class="fa fa-phone"></i>{{ getConfigValueFormSettingTable('phone_contact')->config_value }}</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> {{ getConfigValueFormSettingTable('Email')->config_value }}</a></li>
+                            <li><a href="#"><i
+                                        class="fa fa-phone"></i>{{ getConfigValueFormSettingTable('phone_contact')->config_value }}
+                                </a></li>
+                            <li><a href="#"><i
+                                        class="fa fa-envelope"></i> {{ getConfigValueFormSettingTable('Email')->config_value }}
+                                </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="social-icons pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="{{ getConfigValueFormSettingTable('Facebook_link')->config_value }}"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="{{ getConfigValueFormSettingTable('Instagram_link')->config_value }}"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="{{ getConfigValueFormSettingTable('Facebook_link')->config_value }}"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="{{ getConfigValueFormSettingTable('Instagram_link')->config_value }}"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="{{ getConfigValueFormSettingTable('Facebook_link')->config_value }}"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="{{ getConfigValueFormSettingTable('Instagram_link')->config_value }}"><i
+                                        class="fa fa-twitter"></i></a></li>
+                            <li><a href="{{ getConfigValueFormSettingTable('Facebook_link')->config_value }}"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                            <li><a href="{{ getConfigValueFormSettingTable('Instagram_link')->config_value }}"><i
+                                        class="fa fa-dribbble"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
@@ -43,7 +51,57 @@
                             <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
                             <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
                             <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                            <li class="cart-icon">
+                                <a href="cart.html">
+                                    <a href="">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Cart
+                                        <span>3</span>
+                                    </a>
+                                </a>
+                                <div class="cart-hover">
+                                    <div id="change-item-cart">
+                                        <div class="select-items">
+                                            <table>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="si-pic"><img src="/storage/product/1/yxk0VOes50YhUcrgENem.png" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>₫60.00 x 1</p>
+                                                            <h6>Kabino Bedside Table</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="si-pic"><img src="/storage/product/1/yxk0VOes50YhUcrgENem.png" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>₫60.00 x 1</p>
+                                                            <h6>Kabino Bedside Table</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="select-total">
+                                            <span>total:</span>
+                                            <h5>₫120.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="select-button">
+                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
+                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li>
                                 <a href="login.html"><i class="fa fa-lock"></i>
                                     Login
@@ -72,7 +130,7 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-{{--mainMenu     --}}
+                    {{--mainMenu     --}}
                     @include('componentShow.main_menu')
                 </div>
                 <div class="col-sm-3">

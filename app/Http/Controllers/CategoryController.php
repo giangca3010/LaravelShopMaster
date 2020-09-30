@@ -22,6 +22,14 @@ class CategoryController extends Controller
         return view('admin.category.add', compact('htmlOption'));
     }
 
+    public function getCategory($parentId)
+    {
+        $data = $this->category->all();
+        $recusive = new Recusive($data);
+        $htmlOption = $recusive->categoryRecusive($parentId);
+        return $htmlOption;
+    }
+
     public function index()
     {
         $categories = $this->category->latest()->paginate(5);
@@ -36,14 +44,6 @@ class CategoryController extends Controller
             'slug' => str_slug($request->name),
         ]);
         return redirect()->route('categories.index');
-    }
-
-    public function getCategory($parentId)
-    {
-        $data = $this->category->all();
-        $recusive = new Recusive($data);
-        $htmlOption = $recusive->categoryRecusive($parentId);
-        return $htmlOption;
     }
 
     public function edit($id)

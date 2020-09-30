@@ -23,13 +23,17 @@ Route::get('/admin', function () {
 
 //show
 Route::prefix('/')->group(function () {
-    Route::get('news', [
+    Route::get('/', [
         'as' => 'news',
         'uses' => 'HomeController@index',
     ]);
     Route::get('/categoryshow/{slug}/{id}', [
         'as' => 'categoryShow.product',
         'uses' => 'CategoryShowController@index',
+    ]);
+    Route::get('/add-cart/{id}', [
+        'as' => 'addCart',
+        'uses' => 'CartController@addCart',
     ]);
 });
 

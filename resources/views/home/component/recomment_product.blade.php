@@ -8,22 +8,24 @@
             @foreach($productRecomment as $keyRecomment => $productRecommentItem)
                 @if($keyRecomment % 3 == 0)
                     <div class="item {{ $keyRecomment == 0 ? 'active' : '' }}active">
-                @endif
+                        @endif
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="{{config('app.base_url') . $productRecommentItem->feature_image_path}}" alt=""/>
+                                        <img
+                                            src="{{config('app.base_url') . $productRecommentItem->feature_image_path}}"
+                                            alt=""/>
                                         <h2>{{ number_format($productRecommentItem->price) }} VND</h2>
                                         <p>{{ $productRecommentItem->name }}</p>
-                                        <a href="#" class="btn btn-default add-to-cart"><i
+                                        <a onclick="AddCart({{$productRecommentItem->id}})"
+                                           href="javascript:" class="btn btn-default add-to-cart"><i
                                                 class="fa fa-shopping-cart"></i>Add to cart</a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                @if($keyRecomment % 3 == 2)
+                        @if($keyRecomment % 3 == 2)
                     </div>
                 @endif
             @endforeach
