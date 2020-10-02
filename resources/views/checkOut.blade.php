@@ -12,7 +12,7 @@
             </div>
             <div class="row">
                 <div style="display: table; margin: auto;">
-                    <span class="step step_complete"> <a href="#" class="check-bc">Cart</a>
+                    <span class="step step_complete"> <a href="/List-Cart" class="check-bc">Cart</a>
                         <span class="step_line step_complete"> </span>
                         <span class="step_line backline"> </span>
                     </span>

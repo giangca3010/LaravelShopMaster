@@ -24,7 +24,7 @@ $baseUrl = config('app.base_url');
                                 </div>
                                 <div class="col-sm-6">
                                     <img src="{{$baseUrl . $slider->image_path }}" class="girl img-responsive" alt=""/>
-                                    <img src="Eshopper//images/home/pricing.png" class="pricing" alt=""/>
+                                    <img src="Eshopper/images/home/pricing.png" class="pricing" alt=""/>
                                 </div>
                             </div>
                         @endforeach

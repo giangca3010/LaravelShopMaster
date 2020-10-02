@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 1,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -28,7 +28,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 1,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
                 'price' => '15000000',
                 'category_id' => 10,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
                 'price' => '15000000',
                 'category_id' => 11,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -58,7 +58,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 12,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -68,7 +68,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 13,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -78,7 +78,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 14,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -88,7 +88,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 15,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -98,7 +98,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 4,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0, 'user_id' => 1
             ],
@@ -107,7 +107,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 4,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -117,7 +117,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 5,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -127,7 +127,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 5,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -137,7 +137,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 6,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -147,7 +147,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 6,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -157,7 +157,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 7,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -167,7 +167,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 7,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -177,7 +177,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 8,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0, 'user_id' => 1
             ],
@@ -186,7 +186,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 8,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0, 'user_id' => 1
             ],
@@ -195,7 +195,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 9,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
@@ -205,7 +205,7 @@ class ProductSeeder extends Seeder
                 'price' => '25000000',
                 'category_id' => 9,
                 'feature_image_name' => 'iphone-11-red-400x400.jpg',
-                'feature_image_path' => '/storage/product/1/yxk0VOes50YhUcrgENem.png',
+                'feature_image_path' => 'Eshopper/images/home/phone1.png',
                 'content' => 'Điện thoại giá rẻ tốt nhất Việt Nam',
                 'views_count' => 0,
                 'user_id' => 1
