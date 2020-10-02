@@ -27,14 +27,49 @@ Route::prefix('/')->group(function () {
         'as' => 'news',
         'uses' => 'HomeController@index',
     ]);
+
+    //categoryShow
     Route::get('/categoryshow/{slug}/{id}', [
         'as' => 'categoryShow.product',
         'uses' => 'CategoryShowController@index',
     ]);
+
+    //cart
     Route::get('/add-cart/{id}', [
         'as' => 'addCart',
         'uses' => 'CartController@addCart',
     ]);
+    Route::get('/delete-item-cart/{id}', [
+        'as' => 'deleteCart',
+        'uses' => 'CartController@deleteItemCart',
+    ]);
+    Route::get('/get-quanty-cart', [
+        'as' => 'quantyCart',
+        'uses' => 'CartController@getQuantyCart',
+    ]);
+    Route::get('/List-Cart', [
+        'as' => 'listCart',
+        'uses' => 'CartController@viewListCart'
+    ]);
+    Route::get('/Delete-Item-List-Cart/{id}',[
+        'as' => 'deleteItemCart',
+        'uses' => 'CartController@deleteItemListCart'
+    ]);
+    Route::get('/Save-Item-List-Cart/{id}/{quanty}',[
+        'as' => 'saveListCart',
+        'uses' => 'CartController@saveItemListCart'
+    ]);
+
+    //checkout
+    Route::get('/checkout',[
+        'as' => 'checkouts.list',
+        'uses' => 'CheckoutController@checkout'
+    ]);
+    Route::post('/store',[
+        'as' => 'checkouts.store',
+        'uses' => 'CheckoutController@store'
+    ]);
+
 });
 
 //admin
@@ -318,5 +353,12 @@ Route::prefix('admin')->group(function () {
 
     });
 
+    //orders
+    Route::prefix('orders')->group(function () {
+        Route::get('/', [
+            'as' => 'orders.index',
+            'uses' => 'OrderController@index',
+        ]);
+    });
 
 });

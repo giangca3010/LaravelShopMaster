@@ -6,7 +6,7 @@
             <div class="product-image-wrapper">
                 <div class="single-products">
                     <div class="productinfo text-center">
-                        <img src="{{config('app.base_url') . $product->feature_image_path}}" alt=""/>
+                        <img src="{{$product->feature_image_path}}" alt=""/>
                         <h2>{{ number_format($product->price) }}VND</h2>
                         <p>{{ $product->name }}</p>
                         <a onclick="AddCart({{$product->id}})"

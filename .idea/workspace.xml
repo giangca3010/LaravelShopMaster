@@ -11,10 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d37ad51-6079-411c-9103-9857642c3c3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/list-cart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Eshopper/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Eshopper/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Eshopper/js/jquery.prettyPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/js/jquery.prettyPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/componentShow/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/componentShow/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/siderbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/siderbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layoutsShow/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layoutsShow/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +164,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShopCart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -163,17 +174,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/seeds" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/app/Policies" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/admins/role/add" />
       <recent name="$PROJECT_DIR$/public/admins/product/index" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/database/seeds" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/app/Policies" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -259,7 +270,7 @@
       <workItem from="1601273098842" duration="17521000" />
       <workItem from="1601355425086" duration="614000" />
       <workItem from="1601433461041" duration="4000000" />
-      <workItem from="1601448646127" duration="8807000" />
+      <workItem from="1601448646127" duration="24953000" />
     </task>
     <servers />
   </component>
@@ -305,10 +316,14 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="437" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/43.27.1323.741@43.27.1323.741" timestamp="1601279503443" />
-    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1601447818354">
+    <state x="143" y="125" width="1123" height="543" key="DiffContextDialog" timestamp="1601530225550">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1601447818354" />
+    <state x="143" y="125" width="1123" height="543" key="DiffContextDialog/43.27.1323.741@43.27.1323.741" timestamp="1601530225550" />
+    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1601460819667">
+      <screen x="43" y="27" width="1323" height="741" />
+    </state>
+    <state x="487" y="154" width="424" height="484" key="FileChooserDialogImpl/43.27.1323.741@43.27.1323.741" timestamp="1601460819667" />
     <state x="400" y="143" width="665" height="561" key="NewPhpClassDialog" timestamp="1601279540867">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
@@ -345,9 +360,9 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="368" y="175" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1600794965403" />
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1601458783369">
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1601530120114">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1601458783369" />
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1601530120114" />
   </component>
 </project>

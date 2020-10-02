@@ -62,49 +62,45 @@
                                     <a href="">
                                         <i class="fa fa-shopping-cart"></i>
                                         Cart
-                                        <span>3</span>
+                                        <span id="total-cart">{{ $totalQuanty }}</span>
                                     </a>
                                 </a>
                                 <div class="cart-hover">
                                     <div id="change-item-cart">
+                                        @if(Session::has("cart") != null)           {{--has: kiem tra co ton tai hay khong--}}
                                         <div class="select-items">
                                             <table>
                                                 <tbody>
+                                                @foreach(Session::get('cart')->products as $item)                 {{--get: lay gia tri cua session ra--}}
                                                 <tr>
-                                                    <td class="si-pic"><img src="/storage/product/1/yxk0VOes50YhUcrgENem.png" alt=""></td>
+                                                    <td class="si-pic">
+                                                        <img src="{{$item['productInfo']->feature_image_path}}" alt="">
+                                                    </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>₫60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
+                                                            <p>{{number_format($item['productInfo']->price)}} VND
+                                                                x {{ $item['quanty'] }}</p>
+                                                            <h6>{{$item['productInfo']->name}}</h6>
                                                         </div>
                                                     </td>
                                                     <td class="si-close">
-                                                        <i class="ti-close"></i>
+                                                        <i class="ti-close" data-id="{{$item['productInfo']->id}}"></i>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="si-pic"><img src="/storage/product/1/yxk0VOes50YhUcrgENem.png" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>₫60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
+                                                @endforeach
                                                 </tbody>
                                             </table>
                                         </div>
                                         <div class="select-total">
                                             <span>total:</span>
-                                            <h5>₫120.00</h5>
+                                            <h5>{{ number_format(Session::get('cart')->totalPrice) ?? 0 }} VND</h5>
                                         </div>
+                                        @endif
+
                                     </div>
                                     <div class="select-button">
-                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
-                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                        <a href="/List-Cart" class="primary-btn view-card">VIEW CARD</a>
+                                        <a href="/checkout" class="primary-btn checkout-btn">CHECK OUT</a>
                                     </div>
                                 </div>
                             </li>

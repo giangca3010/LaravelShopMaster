@@ -953,6 +953,8 @@ li.cart-icon .cart-hover .select-items table tr td {
 
 li.cart-icon .cart-hover .select-items table tr td.si-pic img {
     border: 1px solid #ebebeb;
+    width: 100%;
+    width: 100px;
 }
 
 li.cart-icon .cart-hover .select-items table tr td.si-text {
@@ -969,7 +971,7 @@ li.cart-icon .cart-hover .select-items table tr td.si-text .product-selected h6 
     color: #232530;
 }
 
-li.cart-icon .cart-hover .select-items table tr td.si-close {
+.inner-header .nav-right li.cart-icon .cart-hover .select-items table tr td.si-close {
     color: #252525;
     font-size: 16px;
     cursor: pointer;

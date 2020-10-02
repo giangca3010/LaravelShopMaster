@@ -53,7 +53,6 @@
                                     <td>{{ $settingItem->config_value }}</td>
                                     <td>
                                         @can('setting-edit')
-
                                             <a href="{{ route('settings.edit', ['id'=>$settingItem->id]) . '?type=' . $settingItem->type }}"
                                                class="btn btn-default">Edit</a>
                                         @endcan
