@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo pull-left">
-                        <a href="{{ route('news') }}"><img src="Eshopper//images/home/logo.png" alt=""/></a>
+                        <a href="{{ route('news') }}"><img src="Eshopper//images/home/logo.jpg" alt=""/></a>
                     </div>
                     <div class="btn-group pull-right">
 

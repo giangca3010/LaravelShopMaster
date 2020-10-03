@@ -9,7 +9,7 @@
 @endsection
 
 @section('js')
-    <link href="{{ asset('home/home.js') }}" rel="stylesheet">
+    <link href="{{ asset('home/home.css') }}" rel="stylesheet">
 @endsection
 
 
@@ -27,16 +27,15 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="{{config('app.base_url') . $product->feature_image_path}}" alt=""/>
+                                            <img src="{{$product->feature_image_path}}" alt=""/>
                                             <h2>{{ number_format($product -> price) }}</h2>
                                             <p>{{ $product -> name }}</p>
                                             <a onclick="AddCart({{$product->id}})" href="javascript:"
                                                class="btn btn-default add-to-cart">
                                                 <i class="fa fa-shopping-cart"></i>
-                                                Add to cart
+                                                Add to cart123
                                             </a>
                                         </div>
-
                                     </div>
                                     <div class="choose">
                                         <ul class="nav nav-pills nav-justified">
@@ -53,7 +52,6 @@
             </div>
         </div>
     </section>
+
 @endsection
-
-
 
