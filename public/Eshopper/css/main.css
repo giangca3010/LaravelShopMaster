@@ -604,12 +604,12 @@ ul.sub-menu {
 .item h1 {
     color: #B4B1AB;
     font-family: abel;
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 115px;
 }
 
 .item h1 span {
-    color: #f30303;
+    color: #ffac46;
 }
 
 .item h2 {

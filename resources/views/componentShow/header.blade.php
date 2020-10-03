@@ -24,7 +24,7 @@
                 <div class="col-sm-6">
                     <div class="social-icons pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href=""><i
+                            <li><a href="fb.com/giangca89"><i
                                         class="fa fa-facebook"></i></a></li>
                             <li><a href=""><i
                                         class="fa fa-twitter"></i></a></li>
@@ -56,7 +56,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
                             <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+                            <li><a href="/checkout"><i class="fa fa-crosshairs"></i> Checkout</a></li>
                             <li class="cart-icon">
                                 <a href="cart.html">
                                     <a href="">
