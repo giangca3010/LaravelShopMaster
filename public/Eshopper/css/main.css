@@ -600,6 +600,11 @@ ul.sub-menu {
 .girl {
     margin-left: 0;
 }
+.productinfo h2 {
+    color:  #696763 !important;
+}.productinfo p {
+     color:  #e21111 !important;
+ }
 
 .item h1 {
     color: #B4B1AB;

@@ -7,8 +7,8 @@
                 <div class="single-products">
                     <div class="productinfo text-center">
                         <img src="{{$product->feature_image_path}}" alt=""/>
-                        <h2>{{ number_format($product->price) }}VND</h2>
-                        <p>{{ $product->name }}</p>
+                        <h2>{{ $product->name }}</h2>
+                        <p>{{ number_format($product->price) }} VND</p>
                         <a onclick="AddCart({{$product->id}})"
                            href="javascript:"
                            class="btn btn-default add-to-cart">
