@@ -11,8 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d37ad51-6079-411c-9103-9857642c3c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/Eshopper/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +260,8 @@
       <workItem from="1601530237223" duration="40786000" />
       <workItem from="1601719495399" duration="2552000" />
       <workItem from="1601730797769" duration="2678000" />
-      <workItem from="1601799846016" duration="3732000" />
+      <workItem from="1601799846016" duration="4375000" />
+      <workItem from="1601821875907" duration="1547000" />
     </task>
     <servers />
   </component>
@@ -343,17 +343,17 @@
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="485" y="311" width="428" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1323.741@43.27.1323.741" timestamp="1600180842434" />
-    <state x="395" y="135" width="618" height="580" key="find.popup" timestamp="1600258461850">
+    <state x="395" y="135" width="659" height="580" key="find.popup" timestamp="1601821962876">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="395" y="135" width="618" height="580" key="find.popup/43.27.1323.741@43.27.1323.741" timestamp="1600258461850" />
+    <state x="395" y="135" width="659" height="580" key="find.popup/43.27.1323.741@43.27.1323.741" timestamp="1601821962876" />
     <state x="368" y="175" width="672" height="677" key="run.anything.popup" timestamp="1601531345909">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
     <state x="368" y="175" width="672" height="677" key="run.anything.popup/43.27.1323.741@43.27.1323.741" timestamp="1601531345909" />
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1601730924255">
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup" timestamp="1601822699463">
       <screen x="43" y="27" width="1323" height="741" />
     </state>
-    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1601730924255" />
+    <state x="368" y="42" width="672" height="678" key="search.everywhere.popup/43.27.1323.741@43.27.1323.741" timestamp="1601822699463" />
   </component>
 </project>
