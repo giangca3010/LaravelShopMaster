@@ -11,9 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d37ad51-6079-411c-9103-9857642c3c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/Eshopper/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Eshopper/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/component/categry_tabs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/categry_tabs.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/component/feature_product.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +261,7 @@
       <workItem from="1601530237223" duration="40786000" />
       <workItem from="1601719495399" duration="2552000" />
       <workItem from="1601730797769" duration="2678000" />
-      <workItem from="1601799846016" duration="3324000" />
+      <workItem from="1601799846016" duration="3732000" />
     </task>
     <servers />
   </component>
